@@ -1,4 +1,4 @@
-<header class="bg-light ">
+<header class="bg-light">
     <div class="container d-flex justify-content-between vertical-align-middle">
         <img class="my-4" src="{{ Vite::asset('./resources/assets/img/dc-logo.png') }}" alt="logo DC">
         <nav class="nav nav-underline h-100 align-self-center">
