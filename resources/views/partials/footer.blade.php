@@ -76,7 +76,7 @@
                             <a href="#">Contact Us</a>
                         </div>
                         <div class="col d-flex flex-column">
-                            <h4>Sites</h4>
+                            <h4>SITES</h4>
                             <a href="#">DC</a>
                             <a href="#">MAD Magazine</a>
                             <a href="#">DC Kids</a>
@@ -98,7 +98,7 @@
                     <button class="signup_button"><h5>SIGN-UP NOW!</h5></button>
                 </div>
                 <div class="col d-flex justify-content-end align-items-center">
-                    <h3 class="text-primary m-0">FOLLOW US</h3>
+                    <h3 class="text-primary m-0"><strong>FOLLOW US</strong></h3>
                     <a href="http://facebook.com"><img src="{{ Vite::asset('./resources/assets/img/footer-facebook.png') }}" alt="Facebook"></a>
                     <a href="http://x.com"><img src="{{ Vite::asset('./resources/assets/img/footer-twitter.png') }}" alt="Twitter"></a>
                     <a href="http://youtube.com"><img src="{{ Vite::asset('./resources/assets/img/footer-youtube.png') }}" alt="Youtube"></a>
