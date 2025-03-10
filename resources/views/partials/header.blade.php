@@ -1,6 +1,6 @@
 <style>
     header {
-        height: 150px;
+        height: 100px;
 
         .container {
             img {

@@ -7,26 +7,29 @@ Laravel Comics
 @endsection
 
 @php
-$comics = config("comics");
+$comics = config('comics');
 @endphp
 
-@section("content")
-
+@section('content')
 @include('./partials/jumbotron')
 
-<div class="bg-primary p-3" style="position: absolute; top: 520px; left: 280px">
+<div class="bg-primary p-3" style="position: absolute; top: 470px; left: 280px">
     <h3 class="mb-0">CURRENT SERIES</h3>
 </div>
 <div class="container">
     <div class="row row-cols-lg-6 g-5">
-        @foreach ($comics as $comic)
+        {{-- ogni comic sarà un elemento con chiave index --}}
+        @foreach ($comics as $index => $comic)
         <div class="col">
-            {{-- uso il componente card --}}
-            <x-card>
-                {{-- la proprietà dell'array letterale andrà a valorizzare lo slot --}}
-                <x-slot:imgUrl>{{ $comic["thumb"] }}</x-slot:imgUrl>
-                <x-slot:title>{{ $comic["title"] }}</x-slot:title>
-            </x-card>
+            {{-- reindirizzo alla pagina di dettaglio --}}
+            <a href="{{ route('comic-details', ['id' => $index]) }}" style="text-decoration: none; color: inherit;">
+                {{-- uso il componente card --}}
+                <x-card>
+                    {{-- la proprietà dell'array letterale andrà a valorizzare lo slot --}}
+                    <x-slot:imgUrl>{{ $comic['thumb'] }}</x-slot:imgUrl>
+                    <x-slot:title>{{ $comic['series'] }}</x-slot:title>
+                </x-card>
+            </a>
         </div>
         @endforeach
     </div>
@@ -36,5 +39,4 @@ $comics = config("comics");
 </div>
 
 @include('./partials/links')
-
 @endsection
