@@ -21,13 +21,11 @@ Creare uno o più componenti da condividere tra le varie pagine
 # Risultato
 - homepage
 <br>
-<br>
 <img src="./result/result-1.png">
+
 <br>
 <br>
-<br>
-<br>
+
 - pagina di dettaglio
-<br>
 <br>
 <img src="./result/result-2.png">
