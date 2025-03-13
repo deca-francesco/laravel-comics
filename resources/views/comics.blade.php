@@ -6,10 +6,6 @@
 Laravel Comics
 @endsection
 
-@php
-$comics = config('comics');
-@endphp
-
 @section('content')
 @include('./partials/jumbotron')
 
@@ -17,7 +13,7 @@ $comics = config('comics');
     <h3 class="mb-0">CURRENT SERIES</h3>
 </div>
 <div class="container">
-    <div class="row row-cols-lg-6 g-5">
+    <div class="row row-cols-lg-4 row-cols-xl-6 g-5">
         {{-- ogni comic sarà un elemento con chiave index --}}
         @foreach ($comics as $index => $comic)
         <div class="col">
